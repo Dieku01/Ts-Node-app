@@ -1,0 +1,22 @@
+{{#if libros}}
+<h3>Libros</h3>
+<div class="row">
+    {{#each libros}}
+    <div class="col-sm-6 col-md-4">
+        <div class="card h-100">
+            <div class="card-header">
+                <h3 class="card-title text-center">{{titulo}}</h3>
+            </div>
+            <div class="card-body">
+                <p class="card-text">Autor: {{autor}}</p>
+                <p class="card-text">ISBN: {{isbn}}</p>
+            </div>
+            <div class="card-footer d-flex justify-content-between px-5">
+                <button name="btnEditar" class="btn btn-primary">Editar</button>
+                <button name="btnEliminar" class="btn btn-danger">Eliminar</button>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</div>
+{{/if}}
